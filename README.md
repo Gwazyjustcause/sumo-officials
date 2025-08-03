@@ -14,7 +14,7 @@ The site features:
 - GitHub Pages for free hosting
 
 ## 🌐 Live Site
-[https://your-username.github.io/sumo-officials](https://your-username.github.io/sumo-officials)
+[https://Gwazyjustcause.github.io/sumo-officials](https://Gwazyjustcause.github.io/sumo-officials)
 
 ## 📁 File Structure
 - `index.html` – Main static page with embedded data and logic
