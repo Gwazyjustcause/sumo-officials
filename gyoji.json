@@ -1,19 +1,83 @@
 [
   {
-  "name": "Kimura Shonosuke",
-  "kanji": "木村庄之助",
-  "realName": "Hironari Okuyama",
-  "stable": "Dewanoumi",
-  "age": 63,
-  "rank": "Tate Gyoji",
-  "img": "images/kimura-shonosuke.png"
-},
+    "name": "Kimura Shonosuke",
+    "kanji": "木村庄之助",
+    "realName": "Hironari Okuyama",
+    "stable": "Dewanoumi",
+    "age": 63,
+    "rank": "Tate Gyoji",
+    "img": "images/kimura-shonosuke.png"
+  },
   {
     "name": "Shikimori Inosuke",
-    "kanji": "\u5f0f\u5b88\u4f0a\u4e4b\u52a9",
+    "kanji": "式守伊之助",
     "realName": "Masahiro Kimura",
     "stable": "Tokitsukaze",
     "age": 57,
-    "rank": "San'yaku Gyoji"
+    "rank": "San'yaku Gyoji",
+    "img": "images/shikimori-inosuke.png"
+  },
+  {
+    "name": "Kimura Yodo",
+    "kanji": "木村陽道",
+    "realName": "Unknown",
+    "stable": "Takasago",
+    "age": 48,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Komei",
+    "kanji": "式守光明",
+    "realName": "Unknown",
+    "stable": "Kasugano",
+    "age": 44,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Hisanosuke",
+    "kanji": "木村久之助",
+    "realName": "Unknown",
+    "stable": "Musashigawa",
+    "age": 39,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Hayanojo",
+    "kanji": "式守隼之丞",
+    "realName": "Unknown",
+    "stable": "Oitekaze",
+    "age": 36,
+    "rank": "Makushita Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Shojiro",
+    "kanji": "木村正次郎",
+    "realName": "Unknown",
+    "stable": "Shibatayama",
+    "age": 33,
+    "rank": "Sandanme Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Goro",
+    "kanji": "式守五郎",
+    "realName": "Unknown",
+    "stable": "Isegahama",
+    "age": 30,
+    "rank": "Jonidan Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Noriyuki",
+    "kanji": "木村則之",
+    "realName": "Unknown",
+    "stable": "Takanohana",
+    "age": 28,
+    "rank": "Jonokuchi Gyoji",
+    "img": "images/placeholder.png"
   }
 ]
