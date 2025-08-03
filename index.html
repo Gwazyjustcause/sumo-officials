@@ -19,6 +19,12 @@
       text-transform: uppercase;
       color: #9ca3af;
     }
+    .portrait {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
   </style>
 </head>
 <body class="min-h-screen">
@@ -54,8 +60,8 @@
   <script>
     function createCard(data, isGyoji) {
       return `
-        <div class="card flex items-start space-x-4 p-4 rounded-xl shadow text-white">
-          <img src="${data.img || 'https://via.placeholder.com/100x100?text=No+Photo'}" alt="${data.name}" class="w-20 h-20 object-cover rounded-lg border border-gray-600" />
+        <div class="card flex items-stretch space-x-4 p-4 rounded-xl shadow text-white">
+          <img src="${data.img || 'https://via.placeholder.com/100x100?text=No+Photo'}" alt="${data.name}" class="portrait max-h-full" />
           <div>
             <div class="font-bold text-lg mb-1">${data.name}</div>
             <div class="text-sm text-gray-400 mb-1">${data.kanji}</div>
