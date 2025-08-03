@@ -107,7 +107,7 @@
         const rowData = gyoji.filter(d => d.rank === rank);
         if (rowData.length > 0) {
           const row = document.createElement("div");
-          row.className = "flex flex-wrap justify-center gap-6 w-full";
+          row.className = "flex justify-center gap-6 flex-wrap w-full max-w-6xl mx-auto";
           row.innerHTML = rowData.map(d => createCard(d, true)).join("");
           pyramid.appendChild(row);
         }
