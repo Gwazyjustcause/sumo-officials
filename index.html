@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sumo Officials - Gyoji & Shinpan</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumo Officials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #0f172a;
-      color: #e2e8f0;
-    }
-    .label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #94a3b8;
-    }
-    .portrait {
-      height: 160px;
-      width: 160px;
-      object-fit: cover;
-      border-radius: 0.75rem;
-      flex-shrink: 0;
-    }
-    .glass-card {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .glass-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
-    }
-    .pyramid-row {
-      padding: 1rem;
-      margin-bottom: 2rem;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e1525;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .gyoji-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+    .gyoji-rank-group {
+      display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #1a2238;
+      border-radius: 10px;
+      padding: 20px;
+      width: 180px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card .name {
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .card .kanji {
+      font-size: 1rem;
+      color: #ffe08a;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .card .label {
+      font-size: 0.7rem;
+      color: #aaa;
+      margin-top: 5px;
+    }
+
+    .card .value {
+      font-size: 0.85rem;
+      font-weight: 500;
     }
   </style>
 </head>
-<body class="min-h-screen">
-  <header class="bg-slate-900 shadow">
-    <div class="max-w-screen-xl mx-auto px-6 py-8">
-      <h1 class="text-4xl font-bold text-white">Sumo Officials</h1>
-      <p class="text-slate-400 text-sm">Current Gyoji & Shinpan in Professional Sumo</p>
-    </div>
+<body>
+
+  <header>
+    <h1>Sumo Officials</h1>
+    <p>Current Gyoji & Shinpan in Professional Sumo</p>
   </header>
 
-  <main class="max-w-screen-xl mx-auto px-6 py-8">
-    <section class="mb-16">
-      <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-2">Gyoji (Referees)</h2>
-      <div id="gyoji-pyramid" class="flex flex-col items-center w-full">
-        <!-- Pyramid Rows Will Be Injected Here -->
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-2">Shinpan (Judges)</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Shinpan Cards -->
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-slate-900 mt-16">
-    <div class="max-w-screen-xl mx-auto px-6 py-4 text-center text-slate-500 text-sm">
-      Data manually collected from official NSK sources. Updated periodically.
-    </div>
-  </footer>
+  <section>
+    <h2>Gyoji (Referees)</h2>
+    <div id="gyoji" class="gyoji-container"></div>
+  </section>
 
   <script>
-    function createCard(data, isGyoji) {
-      return `
-        <div class="glass-card rounded-2xl p-6 flex gap-6 items-start max-w-xl w-full">
-          <img src="${data.img || 'https://via.placeholder.com/160x160?text=No+Photo'}" alt="${data.name}" class="portrait" />
-          <div class="flex-1">
-            <div class="text-xl font-semibold text-white mb-1">${data.name}</div>
-            <div class="text-sm text-slate-400 mb-3">${data.kanji}</div>
-            <div class="label">${isGyoji ? 'Rank' : 'Former Rank'}</div>
-            <div class="mb-2">${isGyoji ? data.rank : data.formerRank}</div>
-            <div class="label">Stable</div>
-            <div class="mb-2">${data.stable}</div>
-            ${isGyoji ? `
-              <div class="label">Real Name</div>
-              <div class="mb-2">${data.realName}</div>
-              <div class="label">Age</div>
-              <div>${data.age}</div>
-            ` : `
-              <div class="label">Notes</div>
-              <div>${data.notes}</div>
-            `}
-          </div>
-        </div>
-      `;
-    }
+    async function loadGyoji() {
+      const res = await fetch('gyoji.json');
+      const data = await res.json();
 
-    async function loadData() {
-      const [gyoji, shinpan] = await Promise.all([
-        fetch("gyoji.json").then(res => res.json()),
-        fetch("shinpan.json").then(res => res.json())
-      ]);
+      const container = document.getElementById('gyoji');
 
-      const pyramid = document.getElementById("gyoji-pyramid");
-      const shinpanGrid = document.querySelectorAll("main section")[1].querySelector(".grid");
-
-      const rankOrder = [
+      const ranks = [
         "Tate Gyoji",
         "San'yaku Gyoji",
         "Makuuchi Gyoji",
@@ -122,20 +129,38 @@
         "Jonokuchi Gyoji"
       ];
 
-      rankOrder.forEach(rank => {
-        const rowData = gyoji.filter(d => d.rank === rank);
-        if (rowData.length > 0) {
-          const row = document.createElement("div");
-          row.className = "pyramid-row";
-          row.innerHTML = rowData.map(d => createCard(d, true)).join("");
-          pyramid.appendChild(row);
-        }
-      });
+      for (const rank of ranks) {
+        const group = document.createElement('div');
+        group.className = 'gyoji-rank-group';
 
-      shinpanGrid.innerHTML = shinpan.map(d => createCard(d, false)).join("");
+        const filtered = data.filter(gyoji => gyoji.rank === rank);
+        if (filtered.length > 0) {
+          filtered.forEach(gyoji => {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            card.innerHTML = `
+              <img src="${gyoji.img}" alt="${gyoji.name}">
+              <div class="name">${gyoji.name}</div>
+              <div class="kanji">${gyoji.kanji}</div>
+              <div class="label">RANK</div>
+              <div class="value">${gyoji.rank}</div>
+              <div class="label">STABLE</div>
+              <div class="value">${gyoji.stable}</div>
+              <div class="label">REAL NAME</div>
+              <div class="value">${gyoji.realName}</div>
+              <div class="label">AGE</div>
+              <div class="value">${gyoji.age}</div>
+            `;
+            group.appendChild(card);
+          });
+          container.appendChild(group);
+        }
+      }
     }
 
-    loadData();
+    loadGyoji();
   </script>
+
 </body>
 </html>
