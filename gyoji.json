@@ -1,12 +1,13 @@
 [
   {
-    "name": "Kimura Shonosuke",
-    "kanji": "\u6728\u6751\u5e84\u4e4b\u52a9",
-    "realName": "Hironari Okuyama",
-    "stable": "Dewanoumi",
-    "age": 63,
-    "rank": "Tate Gyoji"
-  },
+  "name": "Kimura Shonosuke",
+  "kanji": "木村庄之助",
+  "realName": "Hironari Okuyama",
+  "stable": "Dewanoumi",
+  "age": 63,
+  "rank": "Tate Gyoji",
+  "img": "images/kimura-shonosuke.png"
+},
   {
     "name": "Shikimori Inosuke",
     "kanji": "\u5f0f\u5b88\u4f0a\u4e4b\u52a9",
