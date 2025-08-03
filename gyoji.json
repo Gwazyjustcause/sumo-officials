@@ -2,82 +2,343 @@
   {
     "name": "Kimura Shonosuke",
     "kanji": "木村庄之助",
-    "realName": "Hironari Okuyama",
-    "stable": "Dewanoumi",
-    "age": 63,
+    "realName": "Yuji Horasawa",
+    "stable": "Kokonoe",
+    "age": null,
     "rank": "Tate Gyoji",
-    "img": "images/kimura-shonosuke.png"
+    "img": "images/placeholder.png"
   },
   {
     "name": "Shikimori Inosuke",
     "kanji": "式守伊之助",
-    "realName": "Masahiro Kimura",
-    "stable": "Tokitsukaze",
-    "age": 57,
-    "rank": "San'yaku Gyoji",
-    "img": "images/shikimori-inosuke.png"
-  },
-  {
-    "name": "Kimura Yodo",
-    "kanji": "木村陽道",
-    "realName": "Unknown",
-    "stable": "Takasago",
-    "age": 48,
-    "rank": "Makuuchi Gyoji",
+    "realName": "Yoshimitsu Morita",
+    "stable": "Kasugano",
+    "age": null,
+    "rank": "Tate Gyoji",
     "img": "images/placeholder.png"
   },
   {
-    "name": "Shikimori Komei",
-    "kanji": "式守光明",
-    "realName": "Unknown",
-    "stable": "Kasugano",
-    "age": 44,
-    "rank": "Makuuchi Gyoji",
+    "name": "Kimura Konosuke",
+    "kanji": "木村紘之助",
+    "realName": "Toshiaki Kojima",
+    "stable": "Kokonoe",
+    "age": null,
+    "rank": "San'yaku Gyoji",
     "img": "images/placeholder.png"
   },
   {
     "name": "Kimura Hisanosuke",
     "kanji": "木村久之助",
-    "realName": "Unknown",
-    "stable": "Musashigawa",
-    "age": 39,
+    "realName": "Toshikazu Hata",
+    "stable": "Oshima",
+    "age": null,
+    "rank": "San'yaku Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Kandayu",
+    "kanji": "式守勘太夫",
+    "realName": "Hiroshi Kikuchi",
+    "stable": "Asahiyama",
+    "age": null,
+    "rank": "San'yaku Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Motoki",
+    "kanji": "木村元希",
+    "realName": "Hiromichi Okamura",
+    "stable": "Minato",
+    "age": null,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Akijiro",
+    "kanji": "木村明治郎",
+    "realName": "Shigehiro Nakazawa",
+    "stable": "Kasugano",
+    "age": null,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Kindayu",
+    "kanji": "式守近太夫",
+    "realName": "Hiromitsu Oshida",
+    "stable": "Hanaregoma",
+    "age": null,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Yonosuke",
+    "kanji": "木村与之助",
+    "realName": "Masashi Okuno",
+    "stable": "Hakkaku",
+    "age": null,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Kiichiro",
+    "kanji": "式守喜一郎",
+    "realName": "Osamu Wachi",
+    "stable": "Oitekaze",
+    "age": null,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Asanosuke",
+    "kanji": "木村浅之助",
+    "realName": "Katsuya Ishida",
+    "stable": "Takasago",
+    "age": null,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Shozaburo",
+    "kanji": "木村正三郎",
+    "realName": "Keiichiro Shigeyama",
+    "stable": "Tagonoura",
+    "age": null,
+    "rank": "Makuuchi Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Mitsunosuke",
+    "kanji": "木村光之助",
+    "realName": "Makoto Kawahara",
+    "stable": "Takadagawa",
+    "age": null,
     "rank": "Juryo Gyoji",
     "img": "images/placeholder.png"
   },
   {
-    "name": "Shikimori Hayanojo",
-    "kanji": "式守隼之丞",
-    "realName": "Unknown",
-    "stable": "Oitekaze",
-    "age": 36,
+    "name": "Kimura Yukihiro",
+    "kanji": "木村幸弘",
+    "realName": "Yukihiro Fukunaga",
+    "stable": "Tamanoi",
+    "age": null,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Shinnosuke",
+    "kanji": "式守信之助",
+    "realName": "Yoji Mizutani",
+    "stable": "Hanaregoma",
+    "age": null,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Kichijiro",
+    "kanji": "木村吉次郎",
+    "realName": "Masahiro Nishino",
+    "stable": "Shibatayama",
+    "age": null,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Kankuro",
+    "kanji": "木村勘九郎",
+    "realName": "Yoshimi Nakamura",
+    "stable": "Yamahibiki",
+    "age": null,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Chishu",
+    "kanji": "木村池舟",
+    "realName": "Ryota Kobayashi",
+    "stable": "Dewanoumi",
+    "age": null,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Zennosuke",
+    "kanji": "木村善之助",
+    "realName": "Makoto Kimura",
+    "stable": "Kasugano",
+    "age": null,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Kozaburo",
+    "kanji": "木村小三郎",
+    "realName": "Ryosuke Miyasaka",
+    "stable": "Hakkaku",
+    "age": null,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Hideaki",
+    "kanji": "木村秀昭",
+    "realName": "Akira Moriyasu",
+    "stable": "Tokiwayama",
+    "age": null,
+    "rank": "Juryo Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Kazuki",
+    "kanji": "式守一樹",
+    "realName": "Kazuki Sasai",
+    "stable": "Arashio",
+    "age": null,
     "rank": "Makushita Gyoji",
     "img": "images/placeholder.png"
   },
   {
-    "name": "Kimura Shojiro",
-    "kanji": "木村正次郎",
-    "realName": "Unknown",
-    "stable": "Shibatayama",
-    "age": 33,
+    "name": "Kimura Satoshi",
+    "kanji": "木村聡",
+    "realName": "Satoshi Maeda",
+    "stable": "Takasago",
+    "age": null,
+    "rank": "Makushita Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Ennosuke",
+    "kanji": "木村縁之助",
+    "realName": "Satoru Ishimaru",
+    "stable": "Nishonoseki",
+    "age": null,
+    "rank": "Makushita Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Tomokazu",
+    "kanji": "式守友一",
+    "realName": "Hiromasa Shinya",
+    "stable": "Oshima",
+    "age": null,
+    "rank": "Makushita Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Kinosuke",
+    "kanji": "式守木之助",
+    "realName": "Kazuki Ikegami",
+    "stable": "Sadogatake",
+    "age": null,
+    "rank": "Makushita Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Kazuma",
+    "kanji": "木村一真",
+    "realName": "Kazuma Okada",
+    "stable": "Nishiiwa",
+    "age": null,
+    "rank": "Makushita Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Kintaro",
+    "kanji": "木村金太郎",
+    "realName": "Hayate Matsunaga",
+    "stable": "Nishikido",
+    "age": null,
+    "rank": "Makushita Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Seiichiro",
+    "kanji": "式守誠一郎",
+    "realName": "Rikuto Fukuda",
+    "stable": "Isegahama",
+    "age": null,
+    "rank": "Makushita Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Seisuke",
+    "kanji": "式守清助",
+    "realName": "Koshi Saikawa",
+    "stable": "Isegahama",
+    "age": null,
     "rank": "Sandanme Gyoji",
     "img": "images/placeholder.png"
   },
   {
-    "name": "Shikimori Goro",
-    "kanji": "式守五郎",
-    "realName": "Unknown",
-    "stable": "Isegahama",
-    "age": 30,
+    "name": "Shikimori Tatsunosuke",
+    "kanji": "式守達之助",
+    "realName": "Keisuke Mizutani",
+    "stable": "Takadagawa",
+    "age": null,
+    "rank": "Sandanme Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Kainosuke",
+    "kanji": "式守懐之助",
+    "realName": "Kaito Saita",
+    "stable": "Isenoumi",
+    "age": null,
+    "rank": "Sandanme Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Narimasa",
+    "kanji": "木村成正",
+    "realName": "Narimasa Tajima",
+    "stable": "Ikazuchi",
+    "age": null,
+    "rank": "Sandanme Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Katsunosuke",
+    "kanji": "木村勝之助",
+    "realName": "Kaito Matsumoto",
+    "stable": "Oshima",
+    "age": null,
+    "rank": "Sandanme Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Keitaro",
+    "kanji": "木村圭太郎",
+    "realName": "Keita Akiba",
+    "stable": "Musashigawa",
+    "age": null,
     "rank": "Jonidan Gyoji",
     "img": "images/placeholder.png"
   },
   {
-    "name": "Kimura Noriyuki",
-    "kanji": "木村則之",
-    "realName": "Unknown",
-    "stable": "Takanohana",
-    "age": 28,
-    "rank": "Jonokuchi Gyoji",
+    "name": "Kimura Ryunosuke",
+    "kanji": "木村龍之助",
+    "realName": "Haruto Kajita",
+    "stable": "Kokonoe",
+    "age": null,
+    "rank": "Jonidan Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Kimura Shunta",
+    "kanji": "木村峻太",
+    "realName": "Shunta Utsugi",
+    "stable": "Shikoroyama",
+    "age": null,
+    "rank": "Jonidan Gyoji",
+    "img": "images/placeholder.png"
+  },
+  {
+    "name": "Shikimori Komei",
+    "kanji": "式守光明",
+    "realName": "Komei Hashimoto",
+    "stable": "Naruto",
+    "age": null,
+    "rank": "Jonidan Gyoji",
     "img": "images/placeholder.png"
   }
 ]
