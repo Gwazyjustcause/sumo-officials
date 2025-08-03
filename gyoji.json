@@ -15,7 +15,7 @@
     "stable": "Kokonoe",
     "age": 60,
     "rank": "San'yaku Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Hisanosuke",
@@ -24,7 +24,7 @@
     "stable": "Oshima",
     "age": 57,
     "rank": "San'yaku Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Shikimori Kandayu",
@@ -33,7 +33,7 @@
     "stable": "Asahiyama",
     "age": "N/A",
     "rank": "San'yaku Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Motoki",
@@ -42,7 +42,7 @@
     "stable": "Minato",
     "age": "N/A",
     "rank": "Makuuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Akijiro",
@@ -51,7 +51,7 @@
     "stable": "Kasugano",
     "age": "N/A",
     "rank": "Makuuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Shikimori Kindayu",
@@ -60,7 +60,7 @@
     "stable": "Hanaregoma",
     "age": "N/A",
     "rank": "Makuuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Yonosuke",
@@ -69,7 +69,7 @@
     "stable": "Hakkaku",
     "age": "N/A",
     "rank": "Makuuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Shikimori Kiichiro",
@@ -78,7 +78,7 @@
     "stable": "Oitekaze",
     "age": "N/A",
     "rank": "Makuuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Asanosuke",
@@ -87,7 +87,7 @@
     "stable": "Takasago",
     "age": "N/A",
     "rank": "Makuuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Shozaburo",
@@ -96,7 +96,7 @@
     "stable": "Tagonoura",
     "age": "N/A",
     "rank": "Makuuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Mitsunosuke",
@@ -105,7 +105,7 @@
     "stable": "Takadagawa",
     "age": "N/A",
     "rank": "Juryo Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Yukihiro",
@@ -114,7 +114,7 @@
     "stable": "Tamanoi",
     "age": "N/A",
     "rank": "Juryo Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Shikimori Shinnosuke",
@@ -123,7 +123,7 @@
     "stable": "Hanaregoma",
     "age": "N/A",
     "rank": "Juryo Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Kichijiro",
@@ -132,7 +132,7 @@
     "stable": "Shibatayama",
     "age": 47,
     "rank": "Juryo Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Kankuro",
@@ -141,7 +141,7 @@
     "stable": "Yamahibiki",
     "age": 47,
     "rank": "Juryo Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Chishu",
@@ -150,7 +150,7 @@
     "stable": "Dewanoumi",
     "age": "N/A",
     "rank": "Juryo Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Zennosuke",
@@ -159,7 +159,7 @@
     "stable": "Kasugano",
     "age": "N/A",
     "rank": "Juryo Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Shikimori Shokei",
@@ -168,7 +168,7 @@
     "stable": "Kise",
     "age": "N/A",
     "rank": "Makushita Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Kazuki",
@@ -177,7 +177,7 @@
     "stable": "Musashigawa",
     "age": "N/A",
     "rank": "Makushita Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Shikimori Takanobu",
@@ -186,7 +186,7 @@
     "stable": "Oguruma",
     "age": "N/A",
     "rank": "Sandanme Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Koji",
@@ -195,7 +195,7 @@
     "stable": "Miyagino",
     "age": "N/A",
     "rank": "Sandanme Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Shikimori Hayato",
@@ -204,7 +204,7 @@
     "stable": "Takadagawa",
     "age": "N/A",
     "rank": "Jonidan Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Genjiro",
@@ -213,7 +213,7 @@
     "stable": "Isegahama",
     "age": "N/A",
     "rank": "Jonidan Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Shikimori Daichi",
@@ -222,7 +222,7 @@
     "stable": "Kasugano",
     "age": "N/A",
     "rank": "Jonokuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   },
   {
     "name": "Kimura Tetsuya",
@@ -231,6 +231,6 @@
     "stable": "Futagoyama",
     "age": "N/A",
     "rank": "Jonokuchi Gyoji",
-    "img": "images/placeholder.png"
+    "img": "images/placeholder1.png"
   }
 ]
