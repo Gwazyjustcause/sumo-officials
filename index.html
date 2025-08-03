@@ -52,42 +52,21 @@
   </footer>
 
   <script>
-    const gyojiData = [
-      {
-        name: "Kimura Shonosuke",
-        kanji: "木村庄之助",
-        realName: "Hironari Okuyama",
-        stable: "Dewanoumi",
-        age: 63,
-        rank: "Tate Gyoji"
-      },
-      {
-        name: "Shikimori Inosuke",
-        kanji: "式守伊之助",
-        realName: "Masahiro Kimura",
-        stable: "Tokitsukaze",
-        age: 57,
-        rank: "San'yaku Gyoji"
-      }
-    ];
+   async function loadData() {
+  const [gyoji, shinpan] = await Promise.all([
+    fetch("gyoji.json").then(res => res.json()),
+    fetch("shinpan.json").then(res => res.json())
+  ]);
 
-    const shinpanData = [
-      {
-        name: "Oguruma Oyakata",
-        kanji: "尾車親方",
-        stable: "Oguruma",
-        formerRank: "Ozeki Kotokaze",
-        notes: "Chief Shinpan"
-      },
-      {
-        name: "Onomatsu Oyakata",
-        kanji: "阿武松親方",
-        stable: "Onomatsu",
-        formerRank: "Sekiwake Masurao",
-        notes: "Regular panel member"
-      }
-    ];
+  const gyojiGrid = document.querySelectorAll("main section")[0].querySelector(".grid");
+  const shinpanGrid = document.querySelectorAll("main section")[1].querySelector(".grid");
 
+  gyojiGrid.innerHTML = gyoji.map(d => createCard(d, true)).join("");
+  shinpanGrid.innerHTML = shinpan.map(d => createCard(d, false)).join("");
+}
+
+loadData();
+    
     function createCard(data, isGyoji) {
       return `
         <div class="card rounded-xl p-4 shadow text-white">
