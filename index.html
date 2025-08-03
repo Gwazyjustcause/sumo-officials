@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumo Officials - Gyoji & Shinpan</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-white shadow">
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold">Sumo Officials</h1>
+      <p class="text-sm text-gray-600">Current Gyoji & Shinpan in Professional Sumo</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto p-4">
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Gyoji (Referees)</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white shadow rounded-lg">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="px-4 py-2">Rank</th>
+              <th class="px-4 py-2">Name (Romaji)</th>
+              <th class="px-4 py-2">Kanji</th>
+              <th class="px-4 py-2">Real Name</th>
+              <th class="px-4 py-2">Stable</th>
+              <th class="px-4 py-2">Age</th>
+            </tr>
+          </thead>
+          <tbody id="gyojiTable">
+            <!-- Data goes here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Shinpan (Judges)</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white shadow rounded-lg">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="px-4 py-2">Name (Romaji)</th>
+              <th class="px-4 py-2">Kanji</th>
+              <th class="px-4 py-2">Stable</th>
+              <th class="px-4 py-2">Former Rank</th>
+              <th class="px-4 py-2">Notes</th>
+            </tr>
+          </thead>
+          <tbody id="shinpanTable">
+            <!-- Data goes here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white mt-12 shadow-inner">
+    <div class="container mx-auto p-4 text-center text-gray-500 text-sm">
+      Data manually collected from official NSK sources. Updated periodically.
+    </div>
+  </footer>
+
+  <script>
+    // Example data arrays - replace with real info or fetch from a file/API
+    const gyojiData = [
+      {
+        rank: "Tate Gyoji",
+        romaji: "Kimura Shonosuke",
+        kanji: "木村庄之助",
+        realName: "Hironari Okuyama",
+        stable: "Dewanoumi",
+        age: 63
+      },
+      {
+        rank: "San'yaku Gyoji",
+        romaji: "Shikimori Inosuke",
+        kanji: "式守伊之助",
+        realName: "Masahiro Kimura",
+        stable: "Tokitsukaze",
+        age: 57
+      }
+    ];
+
+    const shinpanData = [
+      {
+        romaji: "Oguruma Oyakata",
+        kanji: "尾車親方",
+        stable: "Oguruma",
+        formerRank: "Ozeki Kotokaze",
+        notes: "Chief Shinpan"
+      },
+      {
+        romaji: "Onomatsu Oyakata",
+        kanji: "阿武松親方",
+        stable: "Onomatsu",
+        formerRank: "Sekiwake Masurao",
+        notes: "Regular panel member"
+      }
+    ];
+
+    function populateTable(data, elementId, isGyoji) {
+      const table = document.getElementById(elementId);
+      table.innerHTML = data.map(d => `
+        <tr class="border-b">
+          ${isGyoji ? `
+          <td class="px-4 py-2">${d.rank}</td>
+          <td class="px-4 py-2">${d.romaji}</td>
+          <td class="px-4 py-2">${d.kanji}</td>
+          <td class="px-4 py-2">${d.realName}</td>
+          <td class="px-4 py-2">${d.stable}</td>
+          <td class="px-4 py-2">${d.age}</td>
+          ` : `
+          <td class="px-4 py-2">${d.romaji}</td>
+          <td class="px-4 py-2">${d.kanji}</td>
+          <td class="px-4 py-2">${d.stable}</td>
+          <td class="px-4 py-2">${d.formerRank}</td>
+          <td class="px-4 py-2">${d.notes}</td>
+          `}
+        </tr>
+      `).join("");
+    }
+
+    populateTable(gyojiData, "gyojiTable", true);
+    populateTable(shinpanData, "shinpanTable", false);
+  </script>
+</body>
+</html>
