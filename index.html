@@ -52,47 +52,45 @@
   </footer>
 
   <script>
-   async function loadData() {
-  const [gyoji, shinpan] = await Promise.all([
-    fetch("gyoji.json").then(res => res.json()),
-    fetch("shinpan.json").then(res => res.json())
-  ]);
-
-  const gyojiGrid = document.querySelectorAll("main section")[0].querySelector(".grid");
-  const shinpanGrid = document.querySelectorAll("main section")[1].querySelector(".grid");
-
-  gyojiGrid.innerHTML = gyoji.map(d => createCard(d, true)).join("");
-  shinpanGrid.innerHTML = shinpan.map(d => createCard(d, false)).join("");
-}
-
-loadData();
-    
     function createCard(data, isGyoji) {
       return `
-        <div class="card rounded-xl p-4 shadow text-white">
-          <div class="font-bold text-lg mb-1">${data.name}</div>
-          <div class="text-sm text-gray-400 mb-1">${data.kanji}</div>
-          <div class="label">${isGyoji ? 'Rank' : 'Former Rank'}</div>
-          <div class="mb-1">${isGyoji ? data.rank : data.formerRank}</div>
-          <div class="label">Stable</div>
-          <div class="mb-1">${data.stable}</div>
-          ${isGyoji ? `
-            <div class="label">Real Name</div>
-            <div class="mb-1">${data.realName}</div>
-            <div class="label">Age</div>
-            <div>${data.age}</div>
-          ` : `
-            <div class="label">Notes</div>
-            <div>${data.notes}</div>
-          `}
+        <div class="card flex items-start space-x-4 p-4 rounded-xl shadow text-white">
+          <img src="${data.img || 'https://via.placeholder.com/100x100?text=No+Photo'}" alt="${data.name}" class="w-20 h-20 object-cover rounded-lg border border-gray-600" />
+          <div>
+            <div class="font-bold text-lg mb-1">${data.name}</div>
+            <div class="text-sm text-gray-400 mb-1">${data.kanji}</div>
+            <div class="label">${isGyoji ? 'Rank' : 'Former Rank'}</div>
+            <div class="mb-1">${isGyoji ? data.rank : data.formerRank}</div>
+            <div class="label">Stable</div>
+            <div class="mb-1">${data.stable}</div>
+            ${isGyoji ? `
+              <div class="label">Real Name</div>
+              <div class="mb-1">${data.realName}</div>
+              <div class="label">Age</div>
+              <div>${data.age}</div>
+            ` : `
+              <div class="label">Notes</div>
+              <div>${data.notes}</div>
+            `}
+          </div>
         </div>
       `;
     }
 
-    document.querySelectorAll("main section")[0].querySelector(".grid").innerHTML = gyojiData.map(d => createCard(d, true)).join("");
-    document.querySelectorAll("main section")[1].querySelector(".grid").innerHTML = shinpanData.map(d => createCard(d, false)).join("");
+    async function loadData() {
+      const [gyoji, shinpan] = await Promise.all([
+        fetch("gyoji.json").then(res => res.json()),
+        fetch("shinpan.json").then(res => res.json())
+      ]);
+
+      const gyojiGrid = document.querySelectorAll("main section")[0].querySelector(".grid");
+      const shinpanGrid = document.querySelectorAll("main section")[1].querySelector(".grid");
+
+      gyojiGrid.innerHTML = gyoji.map(d => createCard(d, true)).join("");
+      shinpanGrid.innerHTML = shinpan.map(d => createCard(d, false)).join("");
+    }
+
+    loadData();
   </script>
 </body>
-</html>
-
 </html>
